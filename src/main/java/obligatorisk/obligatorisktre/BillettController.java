@@ -17,15 +17,15 @@ public class BillettController {
 
     @PostMapping("/lagreBillett")
     public void lagreBillett(Billett innBillett){
-        rep.alleBillett(innBillett);
+        rep.lagreBillett(innBillett);
     }
 
     @GetMapping("/henteBillett")
     public List<Billett> hentAlle(){
-        return rep.alleBillett;}
+        return rep.hentAlle();}
 
     @GetMapping("/slettBillett")
     public void slettAlle(){
-        rep.slett();
+        rep.slettAlle();
     }
 }
