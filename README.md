@@ -21,4 +21,4 @@ Lagde en controller for Billett samt som en egen java for billett. Kjørte så p
 
 
 Vet ikke helt om jeg har gjort dette riktig ettersom jeg får så vidt testa dette. Pcen min tåler så vidt å runne det.
-Har lagt til application properties, schema.sql, billett.repository og endret js
+Har lagt til application properties, schema.sql, billett.repository og endret js. 
