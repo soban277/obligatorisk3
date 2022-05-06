@@ -1,5 +1,21 @@
 let arrayBillett = [];
 
+$(function(){
+    hentAlle();
+});
+
+function hentAlle(){
+    $.get("/henteBilletter", function(Billett){
+        utskrift(Billett);
+    });
+}
+
+function hentAlle(){
+    $.get("/henteBilletter", function(data){
+        utskrift(data);
+    });
+}
+
 function kjopBillett() {
     let velgFilm = document.getElementById("vFilmer").value;
     let antall = document.getElementById("antall").value;
