@@ -12,7 +12,7 @@ public class BillettRepository {
     private JdbcTemplate db;
 
     public void lagreBillett(Billett innBillett){
-        String sql="INSERT INTO Billett (film, antall, fornavn, etternavn, telefonnr, epost) VALUES (?,?,?,?,?,?)";
+        String sql="INSERT INTO Billett (film, antall, fornavn, etternavn, telefonnr, epost)" + "VALUES (?,?,?,?,?,?)";
         db.update(sql, innBillett.getFilm(),innBillett.getAntall(),innBillett.getFornavn(),innBillett.getEtternavn(),innBillett.getTlf(),innBillett.getEpost());
 
     }
